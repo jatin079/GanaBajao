@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4eddc335e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="musicbox">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angles-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="images/Desi_kalakaar.jpg" class="musicsong" id="musicsong">
+            <h1 id="changeh">Desi Kalakaar</h1>
+            <p id="changep">Yo Yo Honey Singh ft. Jatin Kumar</p>
+
+            <audio id="song">
+                <source src="Music/Kalastaar-x-Desi-Kalakaar-(Club-Remix)(PaglaSongs).mp3" type="audio/mpeg" id="cursong">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playpause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div onclick="nextsong()"><i class="fa-solid fa-forward" id="ctrlIcon"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
